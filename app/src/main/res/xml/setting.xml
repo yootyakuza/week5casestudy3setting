@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Category Settings">
+
+        <CheckBoxPreference
+            android:title="TitleCheckSetting"
+            android:summary="DetailCheckSetting"
+            android:key="keyCheck"
+            android:defaultValue="true" />
+
+        <ListPreference
+            android:title="TitleSelectItemSetting"
+            android:summary="DetailSelectItemSetting"
+            android:defaultValue="1"
+            android:entries="@array/listOptions"
+            android:entryValues="@array/listValue" />
+
+        <EditTextPreference
+            android:name="EditTextSetting"
+            android:title="TitleEditTextSetting"
+            android:summary="DetailEditTextSetting"
+            android:defaultValue="Default"
+            android:key="KeyEditText" />
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Category Exam Petty Screen">
+
+        <PreferenceScreen
+            android:key="keyPettyScreen"
+            android:title="TitlePettyScreen"
+            android:summary="DetailPettyScreen">
+
+            <CheckBoxPreference
+                android:key="keyCheckPettyScreen"
+                android:title="TitleCheckPettyScreen"
+                android:summary="DetailHelloCheckPettyScreen" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>
